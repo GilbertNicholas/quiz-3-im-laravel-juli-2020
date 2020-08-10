@@ -16,4 +16,29 @@ class ProjectController extends Controller
     public function create() {
         return view('formProject');
     }
+
+    public function store() {
+        
+        return redirect('/proyek')->with('sukses', 'proyek berhasil dtambahkan!');
+    }
+
+    public function show() {
+        
+        return view();
+    }
+
+    public function edit() {
+        
+        return view();
+    }
+
+    public function update() {
+        
+        return redirect('/proyek')->with('sukses', 'proyek berhasil diubah!');
+    }
+
+    public function destroy() {
+        
+        return redirect('/proyek')->with('sukses', 'proyek berhasil dihapus!');
+    }
 }
